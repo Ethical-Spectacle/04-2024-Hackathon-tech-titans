@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "crypto-pulsar-418018-70323bd4b67f.json"
 
-ee.Initialize()
+# ee.Initialize()
 @app.route("/")
 def home():
     return render_template('home.html')
@@ -16,8 +16,8 @@ def home():
 def process_form():
     location=str(request.form.get("location"))
     landsize=str(request.form.get("landsize"))
-    irrigation_type, suggested_crop, estimated_costs = calculation(location,landsize)
-    return render_template("result.html", location=location, irrigation_type=irrigation_type, suggested_crop=suggested_crop, estimated_costs=estimated_costs)
+    irrigation_water, suggested_crop, estimated_costs, irrigation_costs, material_cost, total_yield, income = calculation(location,landsize)
+    return render_template("result.html", location=location, irrigation_water=irrigation_water, suggested_crop=suggested_crop, estimated_costs=estimated_costs, irrigation_costs=irrigation_costs, material_cost=material_cost, total_yield=total_yield, income=income)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -11,7 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         
         <!-- title of site -->
-        <title>Precision Farming</title>
+        <title>Tech Titans presents Farm Boost</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="../static/assets//logo/favicon.png"/>
@@ -74,7 +74,10 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="./index">Pricision<span>Farming</span></a>
+			                <a style="color: #1b1e20; font-size: 20px; font-weight: 700; text-transform:capitalize;" href="./index">
+								<img src="../static/assets/logo/favicon_prev_ui.png" alt="Company Logo" style="height: 80px;">
+								Tech Titans presents <span style="color: #00ab41;">Farm Boost</span>
+							</a>
 
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
@@ -118,27 +121,32 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div style="margin-bottom: 50px;">{{ irrigation_type }} </div> 
+                                <div>{{ irrigation_water }} </div> 
                             </div><!--/.statistics-content-->
-                            <h3>Irrigation Type</h3>
+							<h4 style="margin-bottom: 40px; color:aliceblue;"> gallons of water</h4>
+                            <h3>Irrigation</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
                     <div class="col-md-4 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div style="margin-bottom: 50px;">{{ suggested_crop }}</div> 
+                                <div>{{ suggested_crop }}</div> 
                             </div><!--/.statistics-content-->
+							<h4 style="margin-bottom: 40px; color:aliceblue;">&nbsp;</h4>
+                            
                             <h3>Suggested Crop</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
-                    <div class="col-md-4 col-sm-6">
+					<div class="col-md-4 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div style="margin-bottom: 50px;">$ {{ estimated_costs }}</div> 
+                                <div>{{ total_yield }}</div> 
                             </div><!--/.statistics-content-->
-                            <h3>Estimated Cost</h3>
+							<h4 style="margin-bottom: 40px; color:aliceblue;"> Bushel per acre</h4>
+                            <h3>Total Yield</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
+                    
                 </div><!--/.statistics-counter-->	
             </div><!--/.container-->
 
@@ -148,7 +156,7 @@
 		<section id="Location" class="reviews">
 			<div class="section-header">
 				<h2>Costs</h2>
-				<p>Breakdown of total estimtated cost of $ {{ estimated_costs }} </p>
+				<p>Breakdown of total estimtated cost of $ {{ estimated_costs }} per Bushel</p>
 			</div><!--/.section-header-->
 		</section><!--/.reviews-->
 		<!--reviews end -->
@@ -158,28 +166,40 @@
         <section id="statistics"  class="statistics">
             <div class="container">
                 <div class="statistics-counter"> 
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div style="margin-bottom: 50px;">{{ irrigation_type }} </div> 
+                                <div>$ {{ irrigation_costs }} </div> 
                             </div><!--/.statistics-content-->
-                            <h3>Irrigation Type</h3>
+							<h4 style="margin-bottom: 40px; color:aliceblue;"> per Bushel</h4>
+                            <h3>Irrigation Cost</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div style="margin-bottom: 50px;">{{ suggested_crop }}</div> 
+                                <div>$ {{ material_cost }}</div> 
                             </div><!--/.statistics-content-->
-                            <h3>Suggested Crop</h3>
+							<h4 style="margin-bottom: 40px; color:aliceblue;"> per Bushel</h4>
+                            <h3>Raw Material</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
-                    <div class="col-md-4 col-sm-6">
+					<div class="col-md-3 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div style="margin-bottom: 50px;">$ {{ estimated_costs }}</div> 
+                                <div>$ {{ estimated_costs }}</div> 
                             </div><!--/.statistics-content-->
-                            <h3>Estimated Costs</h3>
+							<h4 style="margin-bottom: 40px; color:aliceblue;"> per Bushel</h4>
+                            <h3>Total estimated Cost</h3>
+                        </div><!--/.single-ststistics-box-->
+                    </div><!--/.col-->
+					<div class="col-md-3 col-sm-6">
+                        <div class="single-ststistics-box">
+                            <div class="statistics-content">
+                                <div>$ {{ income }} </div> 
+                            </div><!--/.statistics-content-->
+							<h4 style="margin-bottom: 40px; color:aliceblue;"> per Bushel</h4>
+                            <h3>Income</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
                 </div><!--/.statistics-counter-->	
@@ -195,7 +215,7 @@
 		           	<div class="row">
 			           	<div class="col-sm-3">
 			           		 <div class="navbar-header">
-				                <a class="navbar-brand" href="./index">Precision<span>Farming</span></a>
+				                <a class="navbar-brand" href="./index">Tech Titans presents <span>Farm Boost</span></a>
 				            </div><!--/.navbar-header-->
 			           	</div>
 			           	<div class="col-sm-9">
@@ -217,7 +237,7 @@
 						</div>
 						<div class="col-sm-7">
 							<div class="footer-social">
-								<span><i class="fa fa-phone"> +1  (123) 456-786</i></span>
+								<span><i class="fa fa-copyright"> Tech Titans</i></span>
 								<a href="#"><i class="fa fa-facebook"></i></a>	
 								<a href="#"><i class="fa fa-twitter"></i></a>
 								<a href="#"><i class="fa fa-linkedin"></i></a>
