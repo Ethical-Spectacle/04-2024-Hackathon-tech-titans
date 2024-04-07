@@ -15,3 +15,5 @@ def process_form():
     print(location,budget,landsize)
     location,result_value=calculation(budget,location,landsize)
     return render_template("result.html", location=location, result_value=result_value)
+if __name__ == '__main__':
+    app.run(debug=True)
