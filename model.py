@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 
-def calculation(budget,location,landsize):
+def calculation(location,landsize):
     
     df = pd.read_csv("iowa.csv")
 
@@ -26,8 +26,22 @@ def calculation(budget,location,landsize):
     # Calculate accuracy
     accuracy = accuracy_score(y_test, y_pred)
     print("Decision Tree Accuracy:", accuracy)
-    
-    
-    calculation_value=budget+landsize
-    return location,calculation_value
+
+    iowa_agriculture_data = {
+    '50301': { 'irrigation': 'drip', 'suggested_crop': 'corn', 'estimated_costs': 500 },
+    '50302': { 'irrigation': 'sprinkler', 'suggested_crop': 'soybeans', 'estimated_costs': 450 },
+    '50303': { 'irrigation': 'flood', 'suggested_crop': 'alfalfa', 'estimated_costs': 600 },
+    '50304': { 'irrigation': 'center pivot', 'suggested_crop': 'wheat', 'estimated_costs': 550 },
+    '50305': { 'irrigation': 'subsurface', 'suggested_crop': 'oats', 'estimated_costs': 400 },
+    # Add more pin codes and data as needed
+    }
+
+    pin_data = iowa_agriculture_data[location]
+    irrigation_type = pin_data['irrigation']
+    suggested_crop = pin_data['suggested_crop']
+    estimated_costs = int(pin_data['estimated_costs']) * int(landsize)
+    print(int(pin_data['estimated_costs']) * landsize)
+
+
+    return irrigation_type, suggested_crop, estimated_costs
 

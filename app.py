@@ -9,11 +9,10 @@ def home():
 
 @app.route("/result" , methods=["POST"])
 def process_form():
-    budget=request.form.get('budget')
-    location=request.form.get("location")
-    landsize=request.form.get("landsize")
-    print(location,budget,landsize)
-    location,result_value=calculation(budget,location,landsize)
-    return render_template("result.html", location=location, result_value=result_value)
+    location=str(request.form.get("location"))
+    landsize=str(request.form.get("landsize"))
+    irrigation_type, suggested_crop, estimated_costs = calculation(location,landsize)
+    return render_template("result.html", location=location, irrigation_type=irrigation_type, suggested_crop=suggested_crop, estimated_costs=estimated_costs)
+
 if __name__ == '__main__':
     app.run(debug=True)

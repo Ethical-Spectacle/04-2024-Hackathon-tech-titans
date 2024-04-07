@@ -247,7 +247,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     background-position:center;
     background-size:cover;
     text-align: center;
-    height:800px;
     z-index: 1;
 }
 .welcome-hero:before{
@@ -269,6 +268,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     text-transform: uppercase;
     letter-spacing: 2.4px;
     line-height: 1.4;
+    margin-bottom: ;
 }
 .welcome-hero-txt p {
     font-size: 18px;
@@ -276,13 +276,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 25px;
 }
 
-.welcome-hero-serch-box{margin-top: 78px;display: flex;}
+.welcome-hero-serch-box{margin: 78px auto;display: flex;}
+
 .welcome-hero-form {
     display: flex;
     background: #fff;
     height: 70px;
     border-radius: 3px;
-    width: 85%;
 }
 .single-welcome-hero-form {
     position: relative;
@@ -290,7 +290,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     flex-direction: row;
     align-items: center;
     width: 50%;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 .single-welcome-hero-form:first-child{border-right: 1px solid #edeff1;}
 .single-welcome-hero-form input {
@@ -318,12 +318,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     align-items:  center;
     font-size:  14px;
     color:  #fff;
-    width:  170px;
+    width:  200px;
     height:  70px;
     background:  #ff545a;
     text-transform:  capitalize;
     margin-left:  30px;
     border-radius: 3px;
+    padding: 0px 20px;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
     -ms-transition: 0.3s linear; 
