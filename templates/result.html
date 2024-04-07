@@ -83,10 +83,10 @@
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                    <li class=" scroll active"><a href="#home">home</a></li>
-			                    <li class="scroll"><a href="#Location">Location</a></li>
-			                    <li class="scroll"><a href="#Crop_Yield">Crop_Yield</a></li>
-			                    <li class="scroll"><a href="#Fertilizer">Fertilizer</a></li>
-			                    <li class="scroll"><a href="#Cost">Cost</a></li>
+			                    <li class="scroll"><a href="#Location">About</a></li>
+			                    <li class="scroll"><a href="#Crop_Yield">User Cases</a></li>
+			                    <li class="scroll"><a href="#Fertilizer">Pricing</a></li>
+			                    <li class="scroll"><a href="#Cost">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -104,172 +104,89 @@
 		<!--reviews start -->
 		<section id="Location" class="reviews">
 			<div class="section-header">
-				<h2>Yeild</h2>
-				<p>unit/year</p>
+				<h2>Results</h2>
+				<p>Here are your recommendations for zip code - {{ location }} </p>
 			</div><!--/.section-header-->
 		</section><!--/.reviews-->
 		<!--reviews end -->
         <!-- statistics strat -->
-        <section id="statistics"  class="statistics">
-            <div id="map">
-
-            </div>
-
-        </section><!--/.counter-->	
-        <!-- statistics end -->
-
-		<!--reviews start -->
-		<section id="Crop_Yield" class="reviews">
-			<div class="section-header">
-				<h2>Yeild</h2>
-				<p>unit/year</p>
-			</div><!--/.section-header-->
-		</section><!--/.reviews-->
 		<!--reviews end -->
         <!-- statistics strat -->
         <section id="statistics"  class="statistics">
             <div class="container">
                 <div class="statistics-counter"> 
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div class="counter">7000 </div> 
+                                <div style="margin-bottom: 50px;">{{ irrigation_type }} </div> 
                             </div><!--/.statistics-content-->
-                            <h3>2020</h3>
+                            <h3>Irrigation Type</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div class="counter">8000</div> 
+                                <div style="margin-bottom: 50px;">{{ suggested_crop }}</div> 
                             </div><!--/.statistics-content-->
-                            <h3>2021</h3>
+                            <h3>Suggested Crop</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="single-ststistics-box">
                             <div class="statistics-content">
-                                <div class="counter">9000</div> 
+                                <div style="margin-bottom: 50px;">$ {{ estimated_costs }}</div> 
                             </div><!--/.statistics-content-->
-                            <h3>2022</h3>
-                        </div><!--/.single-ststistics-box-->
-                    </div><!--/.col-->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="single-ststistics-box">
-                            <div class="statistics-content">
-                                <div class="counter">10000</div>
-                            </div><!--/.statistics-content-->
-                            <h3>2023</h3>
+                            <h3>Estimated Cost</h3>
                         </div><!--/.single-ststistics-box-->
                     </div><!--/.col-->
                 </div><!--/.statistics-counter-->	
             </div><!--/.container-->
 
-        </section><!--/.counter-->	
-        <!-- statistics end -->
-
+        </section><!--/.counter-->
+		
 		<!--reviews start -->
-		<section id="Fertilizer" class="reviews">
+		<section id="Location" class="reviews">
 			<div class="section-header">
-				<h2>Yeild</h2>
-				<p>unit/year</p>
+				<h2>Costs</h2>
+				<p>Breakdown of total estimtated cost of $ {{ estimated_costs }} </p>
 			</div><!--/.section-header-->
 		</section><!--/.reviews-->
 		<!--reviews end -->
-		<!-- statistics strat -->
-		<section id="statistics"  class="statistics">
-			<div class="container">
-				<div class="statistics-counter"> 
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">7000 </div> 
-							</div><!--/.statistics-content-->
-							<h3>2020</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">8000</div> 
-							</div><!--/.statistics-content-->
-							<h3>2021</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">9000</div> 
-							</div><!--/.statistics-content-->
-							<h3>2022</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">10000</div>
-							</div><!--/.statistics-content-->
-							<h3>2023</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-				</div><!--/.statistics-counter-->	
-			</div><!--/.container-->
-
-		</section><!--/.counter-->	
-		<!-- statistics end -->
-
-        <!--reviews start -->
-		<section id="Cost" class="reviews">
-			<div class="section-header">
-				<h2>Yeild</h2>
-				<p>unit/year</p>
-			</div><!--/.section-header-->
-		</section><!--/.reviews-->
+        <!-- statistics strat -->
 		<!--reviews end -->
-		<!-- statistics strat -->
-		<section id="statistics"  class="statistics">
-			<div class="container">
-				<div class="statistics-counter"> 
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">7000 </div> 
-							</div><!--/.statistics-content-->
-							<h3>2020</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">8000</div> 
-							</div><!--/.statistics-content-->
-							<h3>2021</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">9000</div> 
-							</div><!--/.statistics-content-->
-							<h3>2022</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-					<div class="col-md-3 col-sm-6">
-						<div class="single-ststistics-box">
-							<div class="statistics-content">
-								<div class="counter">10000</div>
-							</div><!--/.statistics-content-->
-							<h3>2023</h3>
-						</div><!--/.single-ststistics-box-->
-					</div><!--/.col-->
-				</div><!--/.statistics-counter-->	
-			</div><!--/.container-->
+        <!-- statistics strat -->
+        <section id="statistics"  class="statistics">
+            <div class="container">
+                <div class="statistics-counter"> 
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-ststistics-box">
+                            <div class="statistics-content">
+                                <div style="margin-bottom: 50px;">{{ irrigation_type }} </div> 
+                            </div><!--/.statistics-content-->
+                            <h3>Irrigation Type</h3>
+                        </div><!--/.single-ststistics-box-->
+                    </div><!--/.col-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-ststistics-box">
+                            <div class="statistics-content">
+                                <div style="margin-bottom: 50px;">{{ suggested_crop }}</div> 
+                            </div><!--/.statistics-content-->
+                            <h3>Suggested Crop</h3>
+                        </div><!--/.single-ststistics-box-->
+                    </div><!--/.col-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="single-ststistics-box">
+                            <div class="statistics-content">
+                                <div style="margin-bottom: 50px;">$ {{ estimated_costs }}</div> 
+                            </div><!--/.statistics-content-->
+                            <h3>Estimated Costs</h3>
+                        </div><!--/.single-ststistics-box-->
+                    </div><!--/.col-->
+                </div><!--/.statistics-counter-->	
+            </div><!--/.container-->
 
-		</section><!--/.counter-->	
-		<!-- statistics end -->
-
-
-
+        </section><!--/.counter-->
+        <!-- statistics end -->
 
 		<!--footer start-->
 		<footer id="footer"  class="footer">
@@ -284,10 +201,10 @@
 			           	<div class="col-sm-9">
 			           		<ul class="footer-menu-item">
 			                    <li class=" scroll active"><a href="#home">home</a></li>
-			                    <li class="scroll"><a href="#Location">Location</a></li>
-			                    <li class="scroll"><a href="#Crop_Yield">Crop_Yield</a></li>
-			                    <li class="scroll"><a href="#Fertilizer">Fertilizer</a></li>
-			                    <li class="scroll"><a href="#Cost">Cost</a></li>
+			                    <li class="scroll"><a href="#Location">About</a></li>
+			                    <li class="scroll"><a href="#Crop_Yield">User Cases</a></li>
+			                    <li class="scroll"><a href="#Fertilizer">Pricing</a></li>
+			                    <li class="scroll"><a href="#Cost">contact</a></li>
 			                </ul><!--/.nav -->
 			           	</div>
 		           </div>
