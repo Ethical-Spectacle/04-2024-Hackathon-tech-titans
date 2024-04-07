@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request
 from model import calculation
+from zip_to_coord import ZipToCoord
+import ee
+import os
 
 app = Flask(__name__)
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "crypto-pulsar-418018-70323bd4b67f.json"
 
+ee.Initialize()
 @app.route("/")
 def home():
     return render_template('home.html')
