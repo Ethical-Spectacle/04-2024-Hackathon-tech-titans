@@ -1,4 +1,4 @@
-from geopy.geocoders import Nominatim
+# from geopy.geocoders import Nominatim
 
 def ZipToCoord (zipcode):
     geolocator = Nominatim(user_agent="zipcode_to_lat_long")
