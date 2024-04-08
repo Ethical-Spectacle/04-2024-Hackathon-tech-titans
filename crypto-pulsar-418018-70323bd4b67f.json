@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "crypto-pulsar-418018",
+  "private_key_id": "70323bd4b67f3f357196a8b3870c369581e85135",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDKOez0QzrgwnDt\nSxgOfNKdmIcLKy1jv/GwrCJPZlDT0Awr2cbXH2tgtJIJbfEBjTRwEhkgUVDxFfgH\nkQ8Xl00K9wFQiqK3/K99LxVNWjMTm99aLroMsGAlsNGLPX0h2+goEi+kdUKYA5O3\nbHvqHbVmELGTrGRnNE6vlxBLMkTz+legWBnmvTiGr7L2RrYZx+fLKBdNBuQckJvN\nnLCdhetjHtf9ZEKK+ED6wLmqwqxlytj8sj54V+5uJKqkJuakM+H2Zpc1Q8Pz6KUg\ngLbGddBskyNQW7wUSdcdVvewnBxLfocy2gPjvm0vEhO3BPDUFbZFif2oZ5mvLWjx\nlkQgFlqRAgMBAAECgf87JyVxTcGisE7G+GfIf8Ms5zDdl79mpalvCKarRj4ztwm2\nQXDKhNl5Sb7UYSV3ynP27dzam3cnDiguDm9f+3dFOYxo5PFnLPX1Cl2B4MKyKJ2O\n4XoKiPN0vZ2ezBUn1pYv70QI4+6bGcYXdp/qpAHFVPIUEUPm21DCjALvlZ5aFFbk\nwtNx0yQ5A21c+uAcUJcSRMZ3ITcwJmK+pKhjZdG5LvMBgvTr/VhNhKiti54oYoeX\nJOsQicCuKR+f10nhd6RAFhjgREDXIBtxNEjcpb65vtutpytzGNY/hxLIL9n3bEKz\nnuNLS7s/FYLrprhAC3FwwCH7LLLCbh3PgWulw7ECgYEA7SnPVSbVaWnYXF0EMKEt\nZBiWxmd1VQbhfmdIXIgMX7oqsd2XqcjXmDV3QBMN9wPurSLFuVPO/iqbV9PDD9/H\nXyKLaitDEJAy7yoHPA/GJeVQu1AqGAxLlnok8sF5SbcWGUx8kn45Bydhf0goyie3\nHd6x5ifXQmGN6fZAeIqzSYkCgYEA2km/kjDySIpV1CSoxyQyPjt0YgtxCHFdYnmL\nwld+MSoc3hWQNt7p500FAUT1vAm05l2+y2w/fhMsjQoPAxQddr6t1JFVjdFLHUKA\nHGrpE2b8RAX3s4UsKmAydV/5K/c83OwR7TcVSxsuIaov8P7hcEiNxVini1Iysbk5\nFhmDLskCgYBODaGX88TvAY/crhxP6OvocpNEzw31ouMZ1+If2gLAiqO8kCJ3FYun\nI4mQw/SnpFqsDrKmUOfiDKG9oQsksVCLhfH+SiizTdIFln51DPf4xuTwEO0ZpwpF\nhwOcBYLmeOREBUFGcVZRfWuAGX6bMcD5iq5gAiK9TSAIrSwAwB1LiQKBgG6axaXW\nhT06UujuNlLJRWgBCiSPtZNYlb/K5ITxfjB9LSledbdH1e7sOKf/ACBqLq43O/Cp\nBbblEkLYoOinbZJ4ZW36wgXc0Zme03kStsys9w+kknD0/n7uRULyAThEyyMJvr+a\nlIB84jAOosIS87nIGYWwORy/5o3k00ceYDj5AoGBAM/qFebRJInHhp52xQXgFVGp\ntrioBzMYc2hTdyhzPjKbBz/9ypsNMnv1bsh+3ekYQ4chL+kcQYKg+pvvGWUybpAF\nseU/nL/VZ9+bviR6AUuqGeFvB1EYRVjTddCDkxf8WpWEiamLJWWzQREJ7qunz8nQ\nFYjl7xX7aYAQ9VifFoce\n-----END PRIVATE KEY-----\n",
+  "client_email": "agriculture-project@crypto-pulsar-418018.iam.gserviceaccount.com",
+  "client_id": "111748170374224843078",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/agriculture-project%40crypto-pulsar-418018.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
